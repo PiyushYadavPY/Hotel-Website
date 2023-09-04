@@ -1,5 +1,5 @@
 const searchInput = document.getElementById("search-input");
-const searchButton = document.getElementById("search-input");
+const searchButton = document.getElementById("search-button");
 searchButton.addEventListener("click" , searchHotel);
 searchInput.addEventListener("keypress", function(e){
     if(e.key === "Enter"){
