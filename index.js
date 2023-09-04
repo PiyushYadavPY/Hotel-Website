@@ -6,13 +6,19 @@ searchInput.addEventListener("keypress", function(e){
         searchHotel();
     }
 })
-
+function clearSearchResults() {
+    const hotelInfoElement = document.getElementById("hotel-info");
+    hotelInfoElement.innerHTML = "";
+  }
+  
 // const searchTerm = "";
 function searchHotel(){
     const searchTerm = searchInput.value.trim();
     if(searchTerm == ""){
         return;
     }
+
+    clearSearchResults();
 
  const url = `https://hotels4.p.rapidapi.com/locations/v3/search?q=${searchTerm}&locale=en_US&langid=1033&siteid=300000001`;
 const options = {
@@ -57,7 +63,3 @@ fetch(url, options)
     .catch((err) => console.log(err));
 
 }
-
-
-
- 
