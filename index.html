@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>PY Rooms</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-logo">
+        PY Rooms</div>
+
+      <div class="inputs">
+        <div class="search-destination">
+          <input id="search-input" type="search" placeholder="Search hotels or city" />
+        </div>
+        <div class="dates">
+          <!-- date picker -->
+          <div class="dates">
+            <label for="check-in-date">Check-In Date:</label>
+            <input type="date" id="check-in-date" name="check-in-date" />
+
+            <label for="check-out-date">Check-Out Date:</label>
+            <input type="date" id="check-out-date" name="check-out-date" />
+          </div>
+        </div>
+        <div class="guest">
+            <select name="" id="guests">
+                <option value="">1room, 2 guest</option>
+                <option value="">2room, 4 guest</option>
+                <option value="">3room, 6 guest</option>
+                <option value="">4room, 8 guest</option>
+            </select>
+        </div>
+        <button id="search-button" class="searchBtn">Search</button>
+      </div>
+      <div class="user">
+        <label for=""></label>
+        <label for="">Login/SignUp</label>
+      </div>
+    </header>
+
+    <div id="hotel-info">
+      
+    </div>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">PY Rooms</div>
+                <div class="footer-links">
+                    <a href="#">About Us</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms and Conditions</a>
+                </div>
+            </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
